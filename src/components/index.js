@@ -1,0 +1,9 @@
+export { default as Footer } from "./footer/Footer.jsx";
+export { default as Header } from "./hearder/Header.jsx";
+export { default as Img } from "./lazyLoadImage/Img.jsx";
+export { default as ContentWrapper } from "./contentWrapper/ContentWrapper.jsx";
+export { default as SwitchTabs } from "./switchTabs/SwitchTabs.jsx";
+export { default as Carousel } from "./carousel/Carousel.jsx";
+export { default as CircleRating } from "./circleRating/CircleRating.jsx";
+export { default as VideoPopup } from "./videoPopup/VideoPopup.jsx";
+export { default as MovieCard } from "./movieCard/MovieCard.jsx";
