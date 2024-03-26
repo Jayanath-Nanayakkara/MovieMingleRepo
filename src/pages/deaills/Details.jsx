@@ -14,7 +14,6 @@ const Details = () => {
   const { data: credits, loading: creditsLoading } = useFetch(
     `/${mediaType}/${id}/credits`
   );
-
   return (
     <div>
       <DetailsBanner video={data?.results?.[0]} crew={credits?.crew} />

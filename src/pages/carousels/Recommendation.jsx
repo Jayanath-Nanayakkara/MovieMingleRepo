@@ -6,7 +6,7 @@ const Recommendation = ({ mediaType, id }) => {
   const { data, loading, error } = useFetch(
     `/${mediaType}/${id}/recommendations`
   );
-  console.log(data?.results);
+
   return (
     <Carousel
       title="Recomendations"

@@ -10,8 +10,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
   const dispatch = useDispatch();
   const url = useSelector((state) => state.home.url);
-  console.log(url);
-  console.log(url.total_pages);
 
   useEffect(() => {
     fetchAPIConfig();
@@ -20,7 +18,6 @@ function App() {
 
   const fetchAPIConfig = () => {
     fetchDataFromApi("/configuration").then((res) => {
-      console.log(res);
       const url = {
         backdrop: res.images.secure_base_url + "original",
         poster: res.images.secure_base_url + "original",
